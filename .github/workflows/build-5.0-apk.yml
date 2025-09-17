@@ -21,7 +21,7 @@ jobs:
     # 2. 改 minSdk 21
     - name: Patch minSdk
       run: |
-        sed -i 's/minSdk.*/minSdk = 21/' app/build.gradle.kts
+        sed -i 's/minSdkVersion.*/minSdkVersion 21/' app/build.gradle
 
     # 3. 编译 Release APK
     - name: Build APK
